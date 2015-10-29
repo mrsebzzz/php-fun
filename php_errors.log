@@ -1,0 +1,19 @@
+[29-Oct-2015 15:40:32 UTC] PHP Parse error:  syntax error, unexpected '++' (T_INC), expecting ')' in /home/ubuntu/workspace/functions/intro.php on line 11
+[29-Oct-2015 15:44:18 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/functions/args.php on line 9
+[29-Oct-2015 15:44:27 UTC] PHP Warning:  Missing argument 3 for hello(), called in /home/ubuntu/workspace/functions/args.php on line 12 and defined in /home/ubuntu/workspace/functions/args.php on line 6
+[29-Oct-2015 15:44:27 UTC] PHP Stack trace:
+[29-Oct-2015 15:44:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/args.php:0
+[29-Oct-2015 15:44:27 UTC] PHP   2. hello() /home/ubuntu/workspace/functions/args.php:12
+[29-Oct-2015 15:44:34 UTC] PHP Warning:  Missing argument 3 for hello(), called in /home/ubuntu/workspace/functions/args.php on line 12 and defined in /home/ubuntu/workspace/functions/args.php on line 6
+[29-Oct-2015 15:44:34 UTC] PHP Stack trace:
+[29-Oct-2015 15:44:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/args.php:0
+[29-Oct-2015 15:44:34 UTC] PHP   2. hello() /home/ubuntu/workspace/functions/args.php:12
+[29-Oct-2015 15:50:24 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/functions/return.php on line 17
+[29-Oct-2015 15:50:31 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/functions/return.php on line 17
+[29-Oct-2015 15:55:40 UTC] PHP Warning:  Missing argument 1 for box(), called in /home/ubuntu/workspace/functions/scope.php on line 10 and defined in /home/ubuntu/workspace/functions/scope.php on line 6
+[29-Oct-2015 15:55:40 UTC] PHP Stack trace:
+[29-Oct-2015 15:55:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/scope.php:0
+[29-Oct-2015 15:55:40 UTC] PHP   2. box() /home/ubuntu/workspace/functions/scope.php:10
+[29-Oct-2015 17:12:54 UTC] PHP Fatal error:  Only variables can be passed by reference in /home/ubuntu/workspace/functions/bif_strings.php on line 11
+[29-Oct-2015 17:21:07 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/functions/bif_arrays.php on line 21
+[29-Oct-2015 17:21:12 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/functions/bif_arrays.php on line 21
