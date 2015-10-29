@@ -39,3 +39,30 @@
 [29-Oct-2015 20:04:02 UTC] PHP Stack trace:
 [29-Oct-2015 20:04:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/prepared.php:0
 [29-Oct-2015 20:04:02 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/database/prepared.php:12
+[29-Oct-2015 21:15:00 UTC] PHP Fatal error:  Non-abstract method Validate::length() must contain body in /home/ubuntu/workspace/syntax/objects.php on line 19
+[29-Oct-2015 21:16:17 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/syntax/objects.php on line 40
+[29-Oct-2015 21:16:31 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/syntax/objects.php on line 40
+[29-Oct-2015 21:21:54 UTC] PHP Fatal error:  Call to undefined method Validate::length() in /home/ubuntu/workspace/syntax/objects.php on line 29
+[29-Oct-2015 21:21:54 UTC] PHP Stack trace:
+[29-Oct-2015 21:21:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/syntax/objects.php:0
+[29-Oct-2015 21:25:21 UTC] PHP Fatal error:  Cannot access protected property Validate::$_name in /home/ubuntu/workspace/syntax/objects.php on line 31
+[29-Oct-2015 21:25:21 UTC] PHP Stack trace:
+[29-Oct-2015 21:25:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/syntax/objects.php:0
+[29-Oct-2015 21:42:36 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/syntax/objects.php on line 125
+[29-Oct-2015 21:47:38 UTC] PHP Fatal error:  Call to undefined method Validate::is_numeric() in /home/ubuntu/workspace/syntax/objects.php on line 155
+[29-Oct-2015 21:47:38 UTC] PHP Stack trace:
+[29-Oct-2015 21:47:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/syntax/objects.php:0
+[29-Oct-2015 21:50:01 UTC] PHP Fatal error:  Undefined class constant 'name' in /home/ubuntu/workspace/syntax/objects.php on line 145
+[29-Oct-2015 21:50:01 UTC] PHP Stack trace:
+[29-Oct-2015 21:50:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/syntax/objects.php:0
+[29-Oct-2015 21:51:05 UTC] PHP Fatal error:  Access to undeclared static property: Validate::$name in /home/ubuntu/workspace/syntax/objects.php on line 143
+[29-Oct-2015 21:51:05 UTC] PHP Stack trace:
+[29-Oct-2015 21:51:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/syntax/objects.php:0
+[29-Oct-2015 21:51:11 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/syntax/objects.php on line 52
+[29-Oct-2015 21:51:11 UTC] PHP Stack trace:
+[29-Oct-2015 21:51:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/syntax/objects.php:0
+[29-Oct-2015 21:51:11 UTC] PHP   2. Validate::min_length() /home/ubuntu/workspace/syntax/objects.php:151
+[29-Oct-2015 21:52:15 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/syntax/objects.php on line 52
+[29-Oct-2015 21:52:15 UTC] PHP Stack trace:
+[29-Oct-2015 21:52:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/syntax/objects.php:0
+[29-Oct-2015 21:52:15 UTC] PHP   2. Validate::min_length() /home/ubuntu/workspace/syntax/objects.php:151
