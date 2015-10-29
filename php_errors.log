@@ -20,3 +20,22 @@
 [29-Oct-2015 18:31:42 Greenwich] PHP Notice:  Undefined index: id in /home/ubuntu/workspace/sqlbuddy/insert.php on line 197
 [29-Oct-2015 18:31:42 Greenwich] PHP Stack trace:
 [29-Oct-2015 18:31:42 Greenwich] PHP   1. {main}() /home/ubuntu/workspace/sqlbuddy/insert.php:0
+[29-Oct-2015 19:45:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/database/pdo.php on line 18
+[29-Oct-2015 19:45:06 UTC] PHP Stack trace:
+[29-Oct-2015 19:45:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/pdo.php:0
+[29-Oct-2015 19:54:06 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/database/prepared.php on line 13
+[29-Oct-2015 19:54:06 UTC] PHP Stack trace:
+[29-Oct-2015 19:54:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/prepared.php:0
+[29-Oct-2015 19:54:06 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/database/prepared.php:13
+[29-Oct-2015 20:03:26 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ubuntu/workspace/database/prepared.php on line 12
+[29-Oct-2015 20:03:26 UTC] PHP Stack trace:
+[29-Oct-2015 20:03:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/prepared.php:0
+[29-Oct-2015 20:03:26 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/database/prepared.php:12
+[29-Oct-2015 20:03:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ubuntu/workspace/database/prepared.php on line 12
+[29-Oct-2015 20:03:49 UTC] PHP Stack trace:
+[29-Oct-2015 20:03:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/prepared.php:0
+[29-Oct-2015 20:03:49 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/database/prepared.php:12
+[29-Oct-2015 20:04:02 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ubuntu/workspace/database/prepared.php on line 12
+[29-Oct-2015 20:04:02 UTC] PHP Stack trace:
+[29-Oct-2015 20:04:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/prepared.php:0
+[29-Oct-2015 20:04:02 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/database/prepared.php:12
