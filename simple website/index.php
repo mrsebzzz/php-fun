@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
+
     <?php include('inc/header.php');?>
     
     <h1>Welcome home!</h1>
@@ -9,6 +7,3 @@
     </p>
     
     <?php include('inc/footer.php');?>
-
-</body>
-</html>

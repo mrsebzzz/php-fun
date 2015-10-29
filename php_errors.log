@@ -17,3 +17,6 @@
 [29-Oct-2015 17:12:54 UTC] PHP Fatal error:  Only variables can be passed by reference in /home/ubuntu/workspace/functions/bif_strings.php on line 11
 [29-Oct-2015 17:21:07 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/functions/bif_arrays.php on line 21
 [29-Oct-2015 17:21:12 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/functions/bif_arrays.php on line 21
+[29-Oct-2015 18:31:42 Greenwich] PHP Notice:  Undefined index: id in /home/ubuntu/workspace/sqlbuddy/insert.php on line 197
+[29-Oct-2015 18:31:42 Greenwich] PHP Stack trace:
+[29-Oct-2015 18:31:42 Greenwich] PHP   1. {main}() /home/ubuntu/workspace/sqlbuddy/insert.php:0
