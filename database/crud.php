@@ -21,13 +21,44 @@ class CRUD extends PDO {
     
     //-------------------------------------------------------------------------
     
-    public function select($columns, $where) {
+    public function select($columns, $where = null) {
         $this->_isTableSet();
-        // $crud->select('*', ['project_id' => 2]);
+        
+        if(is_array($columns)) {
+            $columns = implode(',', $columns);
+        }
+ 
+        $where_stmt = null;
+        if(is_numeric($where)) 
+        {
+            $primary = $this->table . '_id';
+            $where_stmt = "`$primary` = :primary_key";
+            $where = [
+                'primary_key' => $where           
+            ];
+            
+            
+        } 
+        elseif (is_array($where)) 
+        {
+            // Build the WHERE stmt
+            $where_stmt = '';
+                foreach ($where as $_key => $_value) {
+                    $where_stmt .= "WHERE `$_key` = :$_key AND ";
+                }
+            $where_stmt = " WHERE " . rtrim($where_stmt, ' AND ');            
+        }
+        
+        
+        echo "SELECT $columns FROM `{$this->table}` WHERE $where_stmt";
+        
+        $stmt = $this->prepare("SELECT $columns FROM `{$this->table}` $where_stmt");
+        $stmt->execute($where);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
     }
     
     //-------------------------------------------------------------------------
-    
     
     /**
      * Inserts data into DB
@@ -44,7 +75,7 @@ class CRUD extends PDO {
         $keys       = '`' . implode('` , `', $keys_array) . '`';
         $params     = ':' . implode(' , :', $keys_array) . '';
         
-        $sth = $this->prepare("INSERT INTO {$this->table} ($keys) VALUES($params)");
+        $sth = $this->prepare("INSERT INTO `{$this->table}` ($keys) VALUES($params)");
         $result = $sth->execute($data);
         
         if ($result == 1) {
@@ -61,22 +92,51 @@ class CRUD extends PDO {
      * 
      * @param array $data   associate key/value of values of change
      * @param mixed $where  Either an array or a number primary key index
+     * 
+     * @return integer of total affected rows
      */
     
     public function update($data, $where) {
         $this->_isTableSet();
         
+        $set = '';
+        foreach ($data as $_key => $_value) {
+            $set .= "`$_key` = :$_key,";
+        }
         
-        // UPDATE table SET name = :something, other = :other
+        // Remove the trailing comma
+        $set = rtrim($set, ',');
+        
+        if(is_numeric($where)) 
+        {
+            $primary = $this->table . '_id';
+            $where_stmt = "`$primary` = :primary_key";
+            $where = [
+                'primary_key' => $where           
+            ];
+            
+            
+        } 
+        elseif (is_array($where)) 
+        {
+            // Build the WHERE stmt
+            $where_stmt = '';
+                foreach ($where as $_key => $_value) {
+                    $where_stmt .= "`$_key` = :$_key AND ";
+                }
+            $where_stmt = rtrim($where_stmt, ' AND ');            
+        }
+        
+        
+        // Combine the DATA and WHERE to bind to both parameters
+        $data = array_merge($data, $where);
+        
+        $sth =$this->prepare("UPDATE `{$this->table}` SET $set WHERE $where_stmt");
+        $sth->execute($data);
+        return $sth->rowCount();
+        
+        // UPDATE table SET `name` = :something, `other` = :other
         // WHERE x = :x AND y = :y
-        
-        //return the true/false
-        //$crud->update([
-        //    'data' => 1,
-        //    
-        //], [
-        //    'project_id' => 1    
-       // ]);
 
     }
     
@@ -88,7 +148,7 @@ class CRUD extends PDO {
         if(is_numeric($where)) 
         {
             $primary = $this->table . '_id';
-            echo $where_stmt = "`$primary` = :primary_key";
+            $where_stmt = "`$primary` = :primary_key";
             $where = [
                 'primary_key' => $where           
             ];
@@ -106,7 +166,7 @@ class CRUD extends PDO {
         
 
         
-        $sth =$this->prepare("DELETE FROM {$this->table} WHERE $where_stmt");
+        $sth =$this->prepare("DELETE FROM `{$this->table}` WHERE $where_stmt");
         return $sth->execute($where);
     }
     
@@ -122,17 +182,22 @@ class CRUD extends PDO {
 }
 
 $crud = new CRUD('mysql', 'demo', 'localhost', 'sebasw9', '');
-
 $crud->table = "phone";
+
 //echo $crud->insert([
 //    'name' => 'General',
 //    'brand_id' => 2,
 //]);
 
+
 //echo $crud->delete(5);
 //echo $crud->delete(['name' => 'General']);
 
 
-$crud->update(['name' => 'Neux'], 8);
+//echo $crud->update(['name' => 'OKAY'], 2);
+//echo $crud->update(['name' => 'OKAY'], ['brand_id' => 2]);
 
-
+//echo '<pre>';
+//$result = $crud->select(['phone_id', 'name'], ['brand_id' => 3]);
+//echo "<hr />";
+//print_r($result);

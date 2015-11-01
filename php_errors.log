@@ -92,3 +92,39 @@ Stack trace:
 [01-Nov-2015 19:17:46 Greenwich] PHP Notice:  Undefined index: brand_id in /home/ubuntu/workspace/sqlbuddy/insert.php on line 197
 [01-Nov-2015 19:17:46 Greenwich] PHP Stack trace:
 [01-Nov-2015 19:17:46 Greenwich] PHP   1. {main}() /home/ubuntu/workspace/sqlbuddy/insert.php:0
+[01-Nov-2015 19:29:42 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ubuntu/workspace/database/crud.php on line 104
+[01-Nov-2015 19:29:42 UTC] PHP Stack trace:
+[01-Nov-2015 19:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 19:29:42 UTC] PHP   2. CRUD->update() /home/ubuntu/workspace/database/crud.php:164
+[01-Nov-2015 19:29:42 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/database/crud.php:104
+[01-Nov-2015 19:31:05 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ubuntu/workspace/database/crud.php on line 104
+[01-Nov-2015 19:31:05 UTC] PHP Stack trace:
+[01-Nov-2015 19:31:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 19:31:05 UTC] PHP   2. CRUD->update() /home/ubuntu/workspace/database/crud.php:164
+[01-Nov-2015 19:31:05 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/database/crud.php:104
+[01-Nov-2015 19:31:13 UTC] PHP Warning:  PDOStatement::execute() expects at most 1 parameter, 2 given in /home/ubuntu/workspace/database/crud.php on line 104
+[01-Nov-2015 19:31:13 UTC] PHP Stack trace:
+[01-Nov-2015 19:31:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 19:31:13 UTC] PHP   2. CRUD->update() /home/ubuntu/workspace/database/crud.php:164
+[01-Nov-2015 19:31:13 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/database/crud.php:104
+[01-Nov-2015 19:44:53 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/ubuntu/workspace/database/crud.php on line 27
+[01-Nov-2015 19:44:53 UTC] PHP Stack trace:
+[01-Nov-2015 19:44:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 19:44:53 UTC] PHP   2. CRUD->select() /home/ubuntu/workspace/database/crud.php:197
+[01-Nov-2015 19:44:53 UTC] PHP   3. explode() /home/ubuntu/workspace/database/crud.php:27
+[01-Nov-2015 19:50:48 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/database/crud.php on line 56
+[01-Nov-2015 19:50:48 UTC] PHP Stack trace:
+[01-Nov-2015 19:50:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 19:50:48 UTC] PHP   2. CRUD->select() /home/ubuntu/workspace/database/crud.php:202
+[01-Nov-2015 19:50:48 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/database/crud.php:56
+[01-Nov-2015 19:51:34 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/database/crud.php on line 56
+[01-Nov-2015 19:51:34 UTC] PHP Stack trace:
+[01-Nov-2015 19:51:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 19:51:34 UTC] PHP   2. CRUD->select() /home/ubuntu/workspace/database/crud.php:201
+[01-Nov-2015 19:51:34 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/database/crud.php:56
+[01-Nov-2015 19:56:03 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/database/crud.php on line 201
+[01-Nov-2015 19:56:23 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/database/crud.php on line 56
+[01-Nov-2015 19:56:23 UTC] PHP Stack trace:
+[01-Nov-2015 19:56:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 19:56:23 UTC] PHP   2. CRUD->select() /home/ubuntu/workspace/database/crud.php:201
+[01-Nov-2015 19:56:23 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/database/crud.php:56
