@@ -128,3 +128,14 @@ Stack trace:
 [01-Nov-2015 19:56:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
 [01-Nov-2015 19:56:23 UTC] PHP   2. CRUD->select() /home/ubuntu/workspace/database/crud.php:201
 [01-Nov-2015 19:56:23 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/database/crud.php:56
+[01-Nov-2015 20:08:35 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/database/crud.php on line 59
+[01-Nov-2015 20:08:35 UTC] PHP Stack trace:
+[01-Nov-2015 20:08:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 20:08:35 UTC] PHP   2. CRUD->select() /home/ubuntu/workspace/database/crud.php:204
+[01-Nov-2015 20:08:35 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/database/crud.php:59
+[01-Nov-2015 20:55:27 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/userx/index.php on line 8
+[01-Nov-2015 20:55:27 UTC] PHP Stack trace:
+[01-Nov-2015 20:55:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/userx/index.php:0
+[01-Nov-2015 20:56:15 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/userx/index.php on line 6
+[01-Nov-2015 20:56:15 UTC] PHP Stack trace:
+[01-Nov-2015 20:56:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/userx/index.php:0

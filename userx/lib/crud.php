@@ -9,7 +9,7 @@
  * @usage
 
     // Construct
-    $crud = new CRUD('mysql', 'demo', 'localhost', 'root');
+    $crud = new CRUD('mysql', 'db_name', 'localhost', 'sebasw9');
     $crud->table = 'phone';
  
     // Insert
