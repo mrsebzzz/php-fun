@@ -66,3 +66,7 @@
 [29-Oct-2015 21:52:15 UTC] PHP Stack trace:
 [29-Oct-2015 21:52:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/syntax/objects.php:0
 [29-Oct-2015 21:52:15 UTC] PHP   2. Validate::min_length() /home/ubuntu/workspace/syntax/objects.php:151
+[01-Nov-2015 18:35:29 UTC] PHP Fatal error:  Call to a member function setAttribute() on a non-object in /home/ubuntu/workspace/database/crud.php on line 11
+[01-Nov-2015 18:35:29 UTC] PHP Stack trace:
+[01-Nov-2015 18:35:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 18:35:29 UTC] PHP   2. CRUD->__construct() /home/ubuntu/workspace/database/crud.php:35
