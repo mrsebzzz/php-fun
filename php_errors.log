@@ -139,3 +139,5 @@ Stack trace:
 [01-Nov-2015 20:56:15 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/userx/index.php on line 6
 [01-Nov-2015 20:56:15 UTC] PHP Stack trace:
 [01-Nov-2015 20:56:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/userx/index.php:0
+[01-Nov-2015 21:21:50 UTC] PHP Parse error:  syntax error, unexpected 'alert' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/userx/index.php on line 25
+[01-Nov-2015 21:28:26 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/userx/index.php on line 30

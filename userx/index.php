@@ -19,21 +19,22 @@ require 'config.php';
         $user_id = $result[0]['user_id'];
         $_SESSION['user_id'] = $user_id;
         $crud->update(['date_logged' => DATETIME], ['user_id' => $user_id]);
-        print_r($_SESSION);
+        header('Location: dashboard.php');
+        exit;
     }
-        print_r($result);
-        
+        echo "<div class='alert alert-danger' role='alert'>Invalid user!</div>";
     }
+    
+    
+    if(isset($_GET['logout'])) {
+        session_destroy();
+        echo "<div class='alert alert-danger' role='alert'>Logged user out!</div>";
+    } 
+    
 ?>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Sebatians PHP App</title>
-        <!-- CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    </head>
-<body>
+<?php include('header.php'); ?>
+
     <hr />
     <div class="login">
         <div class="container col-md-offset-3 col-md-3">
@@ -47,11 +48,10 @@ require 'config.php';
                 <label for="password">Password</label>
                 <input type="password" name="password" class="form-control" id="password" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Log In</button>
         </form>
         </div>
     </div>
    
     
-</body>
-</html>
+<?php include('footer.php'); ?>

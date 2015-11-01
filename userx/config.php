@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('UTC');
+
 //Required Files
 require 'lib/crud.php';
 // require 'lib/example.php';
@@ -8,6 +10,7 @@ require 'lib/crud.php';
 session_start();
 
 // Constants
+define('DATETIME', date('Y-m-d H:i:s'));
 define('SALT', '123456789456123');
 
 
