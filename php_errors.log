@@ -70,3 +70,25 @@
 [01-Nov-2015 18:35:29 UTC] PHP Stack trace:
 [01-Nov-2015 18:35:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
 [01-Nov-2015 18:35:29 UTC] PHP   2. CRUD->__construct() /home/ubuntu/workspace/database/crud.php:35
+[01-Nov-2015 18:48:03 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'you must set the $crud->table' in /home/ubuntu/workspace/database/crud.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/database/crud.php(30): CRUD->_isTableSet()
+#1 /home/ubuntu/workspace/database/crud.php(72): CRUD->insert(Array)
+#2 {main}
+  thrown in /home/ubuntu/workspace/database/crud.php on line 64
+[01-Nov-2015 18:51:17 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/database/crud.php on line 33
+[01-Nov-2015 18:51:26 UTC] PHP Parse error:  syntax error, unexpected '$sth' (T_VARIABLE) in /home/ubuntu/workspace/database/crud.php on line 35
+[01-Nov-2015 18:51:36 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/ubuntu/workspace/database/crud.php on line 80
+[01-Nov-2015 18:57:15 UTC] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home/ubuntu/workspace/database/crud.php on line 45
+[01-Nov-2015 18:57:15 UTC] PHP Stack trace:
+[01-Nov-2015 18:57:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/database/crud.php:0
+[01-Nov-2015 18:57:15 UTC] PHP   2. CRUD->insert() /home/ubuntu/workspace/database/crud.php:95
+[01-Nov-2015 19:17:46 Greenwich] PHP Notice:  Undefined index: phone_id in /home/ubuntu/workspace/sqlbuddy/insert.php on line 197
+[01-Nov-2015 19:17:46 Greenwich] PHP Stack trace:
+[01-Nov-2015 19:17:46 Greenwich] PHP   1. {main}() /home/ubuntu/workspace/sqlbuddy/insert.php:0
+[01-Nov-2015 19:17:46 Greenwich] PHP Notice:  Undefined index: date_added in /home/ubuntu/workspace/sqlbuddy/insert.php on line 197
+[01-Nov-2015 19:17:46 Greenwich] PHP Stack trace:
+[01-Nov-2015 19:17:46 Greenwich] PHP   1. {main}() /home/ubuntu/workspace/sqlbuddy/insert.php:0
+[01-Nov-2015 19:17:46 Greenwich] PHP Notice:  Undefined index: brand_id in /home/ubuntu/workspace/sqlbuddy/insert.php on line 197
+[01-Nov-2015 19:17:46 Greenwich] PHP Stack trace:
+[01-Nov-2015 19:17:46 Greenwich] PHP   1. {main}() /home/ubuntu/workspace/sqlbuddy/insert.php:0
