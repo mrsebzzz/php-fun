@@ -40,7 +40,7 @@ $errors = [];
                 'user_id' => $id    
             ]);
             
-            echo $result;
+            $result;
         }
     }
     
@@ -63,7 +63,7 @@ $errors = [];
                 'user_id' => $id    
             ]);
             
-            echo $result;
+            $result;
         }
     }
 
