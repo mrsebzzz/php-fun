@@ -16,9 +16,13 @@ require 'config.php';
     // There is a match    
     if (!empty($result)) {
         $user_id = $result[0]['user_id'];
+        $type = $result[0]['type'];
+        
         $_SESSION['user_id'] = $user_id;
+        $_SESSION['type'] = $type;
+        
         $crud->update(['date_logged' => DATETIME], ['user_id' => $user_id]);
-        header('Location: dashboard.php');
+        redirect('dashboard.php');
         exit;
     }
         echo "<div class='alert alert-danger' role='alert'>Invalid user!</div>";

@@ -1,6 +1,6 @@
 <?php
 require('config.php');
-protected_area();
+protected_area(true);
 
 $crud->table = "user";
 
@@ -47,7 +47,7 @@ $errors = [];
             if (!$user_id) {
                 $errors[] = "Problem with creating a user!";
             } else {
-                header('location: user.php');
+                redirect('user.php');
                 exit;
             }
         }
@@ -57,7 +57,7 @@ $errors = [];
         $user_id    = $_GET['delete'];
         $result     = $crud->delete(['user_id' => $user_id]);
         if ($result) {
-            header('location: user.php');
+            redirect('user.php');
         } else {
             $errors[] = "Problem deleting the user!";
         }

@@ -4,11 +4,21 @@ protected_area();
 
 $crud->table = "user";
 
-if (!isset($_GET['id'])) {
-    header('location: dashboard.php');
-}
+    if (!isset($_GET['id'])) {
+        redirect('dashboard.php');
+        exit;
+    }
+
 
 $id = (int) $_GET['id'];
+
+    // Only admin can edit other users
+    // User can only edit themselves
+    if($_SESSION['type'] == 'user' && $id != $_SESSION['user_id']) {
+        $_SESSION['message'] = "You do not have authority to edit this user.";
+        redirect('dashboard.php');
+        exit;
+    }
 
 
 // List out existings users
