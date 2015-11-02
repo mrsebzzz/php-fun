@@ -9,7 +9,6 @@ require 'config.php';
         
         
         // Construct
-        $crud = new CRUD('mysql', 'userx', 'localhost', 'sebasw9');
         $crud->table = "user";
         $result = $crud->select('*', ['login' => $login, 'password' => hash256($password)]);
     
